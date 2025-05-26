@@ -8,6 +8,20 @@ CREATE TABLE veiculos(
     valor_diaria DECIMAL(10, 2)
 );
 
+CREATE TABLE pessoas
+(
+    id           BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome        VARCHAR(255),
+    cpf       VARCHAR(255),
+    telefone        VARCHAR(255),
+    email          VARCHAR(255)
+);
+
+
 INSERT INTO veiculos(marca, modelo, placa, ano, cor, valor_diaria)
 VALUES ('Chevrolet', 'Celta', 'abc-1234',
         '2010', 'Preto', 100.00);
+
+INSERT INTO pessoas(nome, cpf, telefone, email)
+VALUES ('Luis', '519.146.958-52', '11952925758',
+        'luisvanique@gmail.com');

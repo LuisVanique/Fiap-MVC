@@ -52,7 +52,7 @@ public class VeiculoController {
         return ResponseEntity.status(HttpStatus.CREATED.value()).build();
     }
 
-    @PutMapping("$/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Void> updateVeiculo(@RequestBody Veiculo veiculo, @PathVariable Long id){
         logger.info("PUT -> /veiculos");
         this.veiculoService.updateVeiculo(veiculo, id);

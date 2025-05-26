@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 
 
 @Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
@@ -19,29 +20,4 @@ public class Veiculo {
     private int ano;
     private String cor;
     private BigDecimal valorDiaria;
-
-    public int getAno() {
-        return ano;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public BigDecimal getValorDiaria() {
-        return valorDiaria;
-    }
 }
