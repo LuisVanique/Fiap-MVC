@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
+@Getter
 public class Veiculo {
 
     private Long id;
